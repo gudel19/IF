@@ -1,0 +1,54 @@
+package pkg202069040005;
+import java.util.*;
+
+public class Menu_aplikasi_matematika_if{
+
+    public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+       float a,b,hasil;
+       char operator;
+       
+        System.out.println("Menu aplikasi matematika" );
+        System.out.println("1. pertambahan (+)   2.pengurangan (-)   3. perkalian (*)   4.pembagian");
+        
+        System.out.println("========================================================================");
+        
+        System.out.print("pilih menu dengan simbol            :");
+        operator = input.next().charAt(0);
+        System.out.print("masukkan nilai pertama              :");
+        a = input.nextFloat();
+        System.out.print("masukkan nilai ke dua               :");
+        b = input.nextFloat();
+        
+        
+       if (operator == '+'){
+            hasil = a + b;
+            System.out.println("Hasil pertambahan antara "+a +" + "+b+" adalah "+hasil);
+        } else if (operator == '-'){ 
+            hasil = a - b;
+          System.out.println("Hasil pengurangan antara "+a +" - "+b+" adalah "+hasil);
+        } else if (operator == '*'){  
+            hasil = a * b;
+            System.out.println("Hasil perkalian antara "+a +" * "+b+" adalah "+hasil);
+        } else if (operator == '/'){  
+            if (b == 0){
+                System.out.println("pembagi nol menghasilkan tak hingga");
+            } else{
+                hasil = a / b;
+                System.out.println("Hasil pembagian antara "+a +" / "+b+" adalah "+hasil);    
+            }
+        } else {
+            System.out.println("operator tidak ditemukan");
+            
+            System.out.println("Thanks For Trying"); 
+          
+        }
+        System.out.println("========================================================================");
+        System.out.println("Akhmad Aldi");
+        System.out.println("202069040005");
+        System.out.println("========================================================================");
+         
+       
+    }
+    
+}
