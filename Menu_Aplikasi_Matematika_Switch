@@ -1,0 +1,55 @@
+
+package pkg202069040005;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Menu_Aplikasi_Matematika_Switch {
+    public static void main(String[] args) {
+        Scanner id=new Scanner(System.in);
+        int A,B;
+        System.out.println("Menu Aplikasi Matematika");
+        System.out.println("1. pertambahan (+)   2.pengurangan (-)   3. perkalian (*)   4.pembagian (/)");
+        
+        String data_pilihan = JOptionPane.showInputDialog("Masukkan Menu Pilihan anda 1 - 4");
+        int pilihan = Integer.parseInt(data_pilihan);
+        
+        System.out.println("========================================================================");
+        System.out.print("Masukkan angka pertama :");
+        A=id.nextInt();
+        System.out.print("Masukkan angka ke dua  :");
+        B=id.nextInt();
+        
+        switch(pilihan){
+            
+        case 1: { int Pertambahan = A + B;
+            System.out.println(""+A+"+"+B+"="+Pertambahan);
+            break;
+        }
+        
+        case 2: { int Pengurangan = A - B;
+            System.out.println(""+A+"-"+B+"="+Pengurangan);
+            break;
+        }
+        
+        case 3: { int kali = A * B;
+            System.out.println(""+A+"*"+B+"="+kali);
+            break;
+        }
+        
+        case 4: { int bagi = A / B;
+            System.out.println(""+A+"/"+B+"="+bagi);
+            break;
+        }
+        default:
+            System.out.println("Maaf pilihan anda tak ada dimenu");
+            break;
+            
+         }
+       System.out.println ("Thanks For Trying");
+       System.out.println ("========================================================================");
+        System.out.println("Akhmad Aldi");
+        System.out.println("202069040005");
+        System.out.println("========================================================================");
+        
+    }    
+}
